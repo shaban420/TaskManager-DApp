@@ -1,5 +1,4 @@
-
-# Task Manager DApp 
+Task Manager DApp 
 
 A blockchain-based task management system built with Solidity, Truffle, Ganache, and Web3.js.
 
@@ -119,5 +118,3 @@ struct task {
 * [Ganache Docs](https://trufflesuite.com/docs/ganache/)
 * [MetaMask Guide](https://metamask.io/faqs/)
 
-
-If you want, I can also **make it even shorter and more sleek for GitHub** with minimal sections so it looks very professional for your repo. Do you want me to do that?
