@@ -1,0 +1,211 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#connectButton {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#connectionStatus {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* ===== Cards / Sections ===== */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #1a73e8;
+}
+
+/* ===== Forms ===== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button.btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+}
+
+button.btn-primary:hover {
+    background-color: #155ab6;
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+button.btn-secondary:hover {
+    background-color: #565e64;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+button.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* ===== Statistics ===== */
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background-color: #e8f0fe;
+    padding: 15px 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* ===== Tasks List ===== */
+.tasks-list {
+    margin-top: 15px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f1f3f4;
+    transition: background-color 0.2s;
+}
+
+.task.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-filter {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 8px;
+}
+
+.btn-filter:hover {
+    background-color: #e0e0e0;
+}
+
+/* ===== Status Messages ===== */
+.status-message {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #fff3cd;
+    color: #856404;
+    border-radius: 8px;
+    display: none; /* show dynamically via JS */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
